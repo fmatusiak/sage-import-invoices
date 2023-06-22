@@ -56,7 +56,7 @@ class ImportInvoice:
 
         if not math.isclose(invoiceAmount, sageAmount):
             raise Exception(
-                'Total on invoice is different.  Sage:' + str(sageAmount) + ' vs Invoice:' + str(invoiceAmount))
+                'Total on invoice is different.Sage:' + str(sageAmount) + ' vs Invoice:' + str(invoiceAmount))
 
     def __save(self):
         self.__invoiceDataEntryWindow.accept()
